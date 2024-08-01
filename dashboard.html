@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>ExKenya Admin</title>
+    <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css" />
+    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css" />
+    <link rel="stylesheet" href="assets/vendors/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+  </head>
+  <body>
+    <div class="container-scroller">
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div class="text-center sidebar-brand-wrapper d-flex align-items-center">
+          <a class="sidebar-brand brand-logo" href="dashboard.html"><img src="assets/images/logo.svg" alt="logo" /></a>
+          <a class="sidebar-brand brand-logo-mini pl-4 pt-3" href="dashboard.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
+        </div>
+        <ul class="nav">
+          <li class="nav-item nav-profile">
+            <a href="#" class="nav-link">
+              <div class="nav-profile-image">
+                <img src="assets/images/faces/face1.jpg" alt="profile" />
+                <span class="login-status online"></span>
+                <!--change to offline or busy as needed-->
+              </div>
+              <div class="nav-profile-text d-flex flex-column pr-3">
+                <span class="font-weight-medium mb-2">Brenden Odhiambo</span>
+                <span class="font-weight-normal">Ksh 187.00</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dashboard.html">
+              <i class="mdi mdi-home menu-icon"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>          
+          <li class="nav-item">
+            <a class="nav-link" href="deposit.html">
+              <i class="mdi mdi-soundcloud menu-icon"></i>
+              <span class="menu-title">Deposit</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <i class="mdi mdi-arrow-left-bold-circle-outline menu-icon"></i>
+              <span class="menu-title">Withdraws</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="deriv.html">Deriv Withdraw</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="wallet.html">Wallet To Mpesa</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cryptoexchange.html">
+              <i class="mdi mdi-shuffle-variant menu-icon"></i>
+              <span class="menu-title">Crypto Exchange</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">
+              <i class="mdi mdi-file-document-box menu-icon"></i>
+              <span class="menu-title">Blog</span>
+            </a>
+          </li>
+          <li class="nav-item sidebar-actions">
+            <div class="nav-link">
+              <div class="mt-4">
+                <ul class="mt-4 pl-0">
+                  <li>Sign Out</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="container-fluid page-body-wrapper">
+        <div id="theme-settings" class="settings-panel">
+          <i class="settings-close mdi mdi-close"></i>
+          <p class="settings-heading">SIDEBAR SKINS</p>
+          <div class="sidebar-bg-options selected" id="sidebar-default-theme">
+            <div class="img-ss rounded-circle bg-light border mr-3"></div> Default
+          </div>
+          <div class="sidebar-bg-options" id="sidebar-dark-theme">
+            <div class="img-ss rounded-circle bg-dark border mr-3"></div> Dark
+          </div>
+          <p class="settings-heading mt-2">HEADER SKINS</p>
+          <div class="color-tiles mx-0 px-4">
+            <div class="tiles light"></div>
+            <div class="tiles dark"></div>
+          </div>
+        </div>
+        <nav class="navbar col-lg-12 col-12 p-lg-0 fixed-top d-flex flex-row">
+          <div class="navbar-menu-wrapper d-flex align-items-stretch justify-content-between">
+            <a class="navbar-brand brand-logo-mini align-self-center d-lg-none" href="dashboard.html"><img src="assets/images/logo-mini.svg" style="height: 64px;  width: 64px;" alt="logo" /></a>
+            <button class="navbar-toggler navbar-toggler align-self-center mr-2" type="button" data-toggle="minimize">
+              <i class="mdi mdi-menu"></i>
+            </button>
+            
+            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+              <span class="mdi mdi-menu"></span>
+            </button>
+          </div>
+        </nav>
+        <div class="main-panel">
+          <div class="content-wrapper pb-0">            
+            <div class="page-header flex-wrap justify-content-around">
+              <div class="d-flex">
+                <button type="button" class="btn text-primary bg-white btn-rounded border overflow-hidden">
+                  <i class="mdi mdi-chart-gantt btn-icon-prepend"></i> Overview 
+                </button>
+                <button type="button" class="btn text-primary bg-white btn-rounded border ml-3 btn-icon">
+                  <i class="mdi mdi-credit-card btn-icon-prepend"></i>
+                </button>
+                <button type="button" class="btn text-primary bg-white btn-rounded border ml-3 btn-icon">
+                  <i class="mdi mdi-message-text-outline btn-icon-prepend"></i>
+                </button>
+                <button type="button" class="btn text-primary bg-white btn-rounded border ml-3 btn-icon">
+                  <i class="mdi mdi-calendar-text btn-icon-prepend"></i>
+                </button>
+                <button type="button" class="btn text-primary bg-white btn-rounded border ml-3 btn-icon">
+                  <i class="mdi mdi-credit-card-multiple btn-icon-prepend"></i>
+                </button>
+              </div>
+              <div class="d-flex">
+                <button type="button" class="btn text-primary bg-white btn-rounded border overflow-hidden">
+                  <i class="mdi mdi-settings btn-icon-prepend"></i> Setting 
+                </button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-8 col-lg-12 stretch-card grid-margin">
+                <div class="row">
+                  <div class="col-xl-6 col-md-6 stretch-card grid-margin grid-margin-sm-0 pb-sm-3">
+                    <div class="card card-calender rounded-9">
+                      <div class="card-body px-3 py-4">
+                        <div class="d-flex justify-content-between align-items-start">
+                          <div class="color-card">
+                            <p class="mb-0 color-card-head">Account</p>
+                            <h2 class="text-white"> KshKsh 8,753.<span class="h5">00</span>
+                            </h2>
+                          </div>
+                          <!-- <i class="card-icon-indicator mdi mdi-basket bg-inverse-icon-warning"></i> -->
+                        </div>
+                        <h6 class="text-white">18.33% Since last month</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-md-6 stretch-card grid-margin grid-margin-sm-0 pb-sm-3">
+                    <div class="card rounded-9" style="background-color: #f6ebdd !important;">
+                      <div class="card-body px-3 py-4">
+                        <div class="d-flex justify-content-between align-items-start">
+                          <div class="color-card">
+                            <p class="mb-0  text-black">Withdrawals</p>
+                            <h2 class="text-black"> Ksh5,300.<span class="h5">00</span>
+                            </h2>
+                          </div>
+                          <i class="card-icon-indicator mdi mdi-cube-outline bg-inverse-icon-danger"></i>
+                        </div>
+                        <h6 class="text-black">13.21% Since last month</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-md-6 stretch-card grid-margin grid-margin-sm-0 pb-sm-3">
+                    <div class="card rounded-9"  style="background-color: #e6e8f7  !important;">
+                      <div class="card-body px-3 py-4 text-black">
+                        <div class="d-flex justify-content-between align-items-start">
+                          <div class="color-card">
+                            <p class="mb-0 text-black">Deposits</p>
+                            <h2 class="text-black">2368</h2>
+                          </div>
+                          <i class="card-icon-indicator mdi mdi-account-circle bg-inverse-icon-success"></i>
+                        </div>
+                        <h6 class="text-black">20.32% Since last month</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-md-6 stretch-card grid-margin grid-margin-sm-0 pb-sm-3">
+                    <div class="card rounded-9 text-black"  style="background-color: #eef3d4 !important;">
+                      <div class="card-body px-3 py-4">
+                        <div class="d-flex justify-content-between align-items-start">
+                          <div class="color-card">
+                            <p class="mb-0 text-black">Affiliate</p>
+                            <h2 class="text-black">2368</h2>
+                          </div>
+                          <i class="card-icon-indicator mdi mdi-account-circle bg-inverse-icon-success"></i>
+                        </div>
+                        <h6 class="text-black">20.32% Since last month</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-sm-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="card-title font-weight-medium pb-3"> Recent Transactions </div>
+                    <div class="col-sm-12 pb-3 border-bottom d-flex flex-wrap justify-content-around">                      
+                        <div class="mb-0 d-flex col-xl-8 col-sm-8">
+                          <img class="mr-2 mt-3" src="assets/images/browser-logo/mpesa.png" alt="" style="height: 40px; width: 40px;"/>
+                          <span class="p pt-3">
+                            <h5 class="mb-0">Deposit</h5>
+                            <p class="mb-0 text-muted">Mpesa</p>
+                          </span>
+                        </div>
+                        <h5 class="mb-0 d-flex col-xl-4 col-sm-4 text-success pt-3">+500.00</h5>                      
+                    </div>
+                    <div class="col-sm-12 pb-3 border-bottom d-flex flex-wrap justify-content-evenly">                      
+                      <div class="mb-0 d-flex col-xl-8 col-sm-8">
+                        <img class="mr-2 mt-3" src="assets/images/browser-logo/mpesa.png" alt="" style="height: 40px; width: 40px;"/>
+                        <span class="p pt-3">
+                          <h5 class="mb-0">Deposit</h5>
+                          <p class="mb-0 text-muted">Mpesa</p>
+                        </span>
+                      </div>
+                      <h5 class="mb-0 d-flex col-xl-4 col-sm-4 text-success pt-3">+500.00</h5>                      
+                  </div>
+                  <div class="col-sm-12 pb-3 border-bottom d-flex flex-wrap justify-content-evenly">                      
+                    <div class="mb-0 d-flex col-xl-8 col-sm-8">
+                      <img class="mr-2 mt-3" src="assets/images/browser-logo/mpesa.png" alt="" style="height: 40px; width: 40px;"/>
+                      <span class="p pt-3">
+                        <h5 class="mb-0">Deposit</h5>
+                        <p class="mb-0 text-muted">Mpesa</p>
+                      </span>
+                    </div>
+                    <h5 class="mb-0 d-flex col-xl-4 col-sm-4 text-success pt-3">+500.00</h5>                      
+                </div>
+                <div class="col-sm-12 pb-3 border-bottom d-flex flex-wrap justify-content-evenly">                      
+                  <div class="mb-0 d-flex col-xl-8 col-sm-8">
+                    <img class="mr-2 mt-2" src="assets/images/browser-logo/mpesa.png" alt="" style="height: 40px; width: 40px;"/>
+                    <span class="p pt-3">
+                      <h5 class="mb-0">Deposit</h5>
+                      <p class="mb-0 text-muted">Mpesa</p>
+                    </span>
+                  </div>
+                  <h5 class="mb-0 d-flex col-xl-4 col-sm-4 text-danger pt-3">-100.00</h5>                      
+              </div>
+              <div class="col-sm-12 pb-3 border-bottom d-flex flex-wrap justify-content-evenly">                      
+                <div class="mb-0 d-flex col-xl-8 col-sm-8">
+                  <img class="mr-2 mt-3" src="assets/images/browser-logo/mpesa.png" alt="" style="height: 40px; width: 40px;"/>
+                  <span class="p pt-3">
+                    <h5 class="mb-0">Deposit</h5>
+                    <p class="mb-0 text-muted">Mpesa</p>
+                  </span>
+                </div>
+                <h5 class="mb-0 d-flex col-xl-4 col-sm-4 text-success pt-3">+500.00</h5>                      
+            </div>
+                    <a class="text-black mt-3 d-block font-weight-medium h6" href="#">View all <i class="mdi mdi-chevron-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <footer class="footer">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © exKenya.com 2024</span>
+              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">www.exKenya.com</span>
+            </div>
+          </footer>
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="assets/vendors/chart.js/Chart.min.js"></script>
+    <script src="assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <script src="assets/vendors/flot/jquery.flot.js"></script>
+    <script src="assets/vendors/flot/jquery.flot.resize.js"></script>
+    <script src="assets/vendors/flot/jquery.flot.categories.js"></script>
+    <script src="assets/vendors/flot/jquery.flot.fillbetween.js"></script>
+    <script src="assets/vendors/flot/jquery.flot.stack.js"></script>
+    <script src="assets/vendors/flot/jquery.flot.pie.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="assets/js/off-canvas.js"></script>
+    <script src="assets/js/hoverable-collapse.js"></script>
+    <script src="assets/js/misc.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="assets/js/dashboard.js"></script>
+    <!-- End custom js for this page -->
+  </body>
+</html>
