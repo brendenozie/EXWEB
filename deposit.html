@@ -361,62 +361,66 @@
       <!-- page-body-wrapper ends -->
     </div>
      <!-- Modal Structure -->
-     <div class="modal fade" id="derivModalLabel1" tabindex="-1" role="dialog" aria-labelledby="derivModalLabel1" aria-hidden="true">
-          <div class="modal-dialog card pt-4">
-                <div class="col-md-12 grid-margin stretch-card">
-                  <div class="card">
-                    <div class="card-body">
-                      <form class="forms-sample">
-                        <div class="form-group">
-                          <p class="mb-0 color-card-head"><h2>Deriv Deposit</h2></p>
-                        </div>
-                        <div class="form-group">
-                          <label for="exampleInputUsername1">CR Number</label>
-                          <input type="text" class="form-control" id="exampleInputUsername1" placeholder="CRXXXX" />
-                        </div>
-                        <div class="form-group">
-                          <label for="exampleInputEmail1">Amount In Dollars</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" />
-                        </div>
-                        <div class="form-group">
-                          <p class="mb-0 color-card-head">Exchange Rate: USD 1 = KES 137</p>
-                          <p class="mb-0 color-card-head">Current Wallet Balance In USD = 0.55</p>
-                          <p class="mb-0 color-card-head">Minimum Amount transferable = USD 10</p>
-                        </div>
-                        <button type="submit" class="btn btn-primary mr-2"> Deposit </button>
-                        <button type="button" class="btn " data-dismiss="modal">Cancel</button>
-                      </form>
-                  </div>
+      <div class="modal fade" id="derivModalLabel1" tabindex="-1" role="dialog" aria-labelledby="derivModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="derivModalLabel1">Deriv Deposit</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form class="forms-sample">
+                <div class="form-group">
+                  <label for="crNumber">CR Number</label>
+                  <input type="text" class="form-control" id="crNumber" placeholder="CRXXXX" />
                 </div>
-              </div>
-          </div>
-    </div>
-    <!-- Modal Structure -->
-    <div class="modal fade" id="mpesaModalLabel1" tabindex="-1" role="dialog" aria-labelledby="mpesaModalLabel1" aria-hidden="true">
-      <div class="modal-dialog card pt-4">
-            <div class="col-md-12 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <form class="forms-sample">                    
-                    <div class="form-group">
-                      <p class="mb-0 color-card-head"><h2>Mpesa Deposit</h2></p>
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputUsername1">Enter Phone number (start with 254)</label>
-                      <input type="text" class="form-control" id="exampleInputUsername1" placeholder="254" />
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Amount To Deposit</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="0" />
-                    </div>
-                    <button type="submit" class="btn btn-primary mr-2"> Deposit </button>
-                    <button type="button" class="btn " data-dismiss="modal">Cancel</button>
-                  </form>
-              </div>
+                <div class="form-group">
+                  <label for="amountInDollars">Amount In Dollars</label>
+                  <input type="text" class="form-control" id="amountInDollars" placeholder="Amount" />
+                </div>
+                <div class="form-group">
+                  <p class="mb-0 color-card-head">Exchange Rate: USD 1 = KES 137</p>
+                  <p class="mb-0 color-card-head">Current Wallet Balance In USD = 0.55</p>
+                  <p class="mb-0 color-card-head">Minimum Amount transferable = USD 10</p>
+                </div>
+                <button type="submit" class="btn btn-primary mr-2"> Deposit </button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              </form>
             </div>
           </div>
+        </div>
       </div>
-</div>
+
+      <!-- Modal Structure -->
+      <div class="modal fade" id="mpesaModalLabel1" tabindex="-1" role="dialog" aria-labelledby="mpesaModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="mpesaModalLabel1">Mpesa Deposit</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form class="forms-sample">
+                <div class="form-group">
+                  <label for="phoneNumber">Enter Phone number (start with 254)</label>
+                  <input type="text" class="form-control" id="phoneNumber" placeholder="254" />
+                </div>
+                <div class="form-group">
+                  <label for="amountToDeposit">Amount To Deposit</label>
+                  <input type="text" class="form-control" id="amountToDeposit" placeholder="Amount" />
+                </div>
+                <button type="submit" class="btn btn-primary mr-2"> Deposit </button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <!-- container-scroller -->
     <!-- plugins:js -->
     <script src="assets/vendors/js/vendor.bundle.base.js"></script>
